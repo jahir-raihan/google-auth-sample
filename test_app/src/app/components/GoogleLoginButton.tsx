@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 // src/components/GoogleLoginButton.tsx
 'use client';
@@ -7,7 +8,7 @@ import { useAuth } from './AuthProvider';
 import axios from 'axios';
 
 const GoogleLoginButton = () => {
-  const { login } = useAuth();
+  //const { login } = useAuth();
 
   const handleLoginSuccess = async (response: any) => {
     try {
@@ -24,7 +25,7 @@ const GoogleLoginButton = () => {
       });
 
       // Call login method to store tokens
-      login(data.access_token);
+      //login(data.access_token);
     } catch (error) {
       console.error('Error during Google login:', error);
     }
